@@ -55,6 +55,31 @@ def abaco(entrada_abaco):
 
     return (abaco_ordenado)
 
+abaco(numero)
+
+def inicializar_tablero():
+    tablero = []
+    for i in range(0,9):
+        fila = []
+        for j in range(0,6):
+            fila.append =("|||")
+        tablero.append(fila)
+        return tablero
+def imprimir_tablero(tablero):
+    tablero.reverse()
+    for fila in tablero:
+        for elemento in fila:
+            print(elemento, sep="", end="")
+        print()
+# Llena el tablero del abaco con xxx
+def llenar_tablero(digitos, tablero):
+    for j in range(0, 6):
+        for i in range(0, digitos[j]):
+            tablero[i][j] = " XXX "
+    return tablero
+
+print (llenar_tablero)
+
 ########################################################################################
 
 
